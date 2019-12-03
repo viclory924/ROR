@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRBXCZS');</script>
+<!-- End Google Tag Manager -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rhydycar West: A new sports & leisure destination and neighbourhood in South Wales.">
+    <meta name="keywords" content="rhydycar west, wales, sports and leisure, sports, activities, things to do in south wales">
+    <meta name="author" content="Rhydycar West">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:url" content="http://rhydycarwest.com/en">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#da532c">
+    <meta name="apple-mobile-web-app-title" content="Rhydycar West">
+    <meta name="application-name" content="Rhydycar West">
+    <meta name="msapplication-TileColor" content="#da532cs">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/agv1ilt.css">
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+<!--[if lte IE 8]>
+
+   <![endif]-->
+
+
+  </head>
+
+  <body>
+    <nav class="top-bar topbar-responsive">
+    <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="/"><%= image_tag("rhydycar_west_white.png") -%></a>
+    </div>
+    <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="/">Home</a></li>
+        <li><a href="/the-scheme">The scheme</a></li>
+        <li><a href="/elements">Elements</a></li>
+        <li><a href="/ecology">Ecology</a></li>
+        <li><a href="/heritage">Heritage</a></li>
+        <li><a href="/get-in-touch">Get In Touch</a></li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+
+    <%= yield %>
+    <section class="pagefoot">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell text-center">
+            <h4>Show us your support and concerns!</h4>
+            <p>Please take 2 minutes to complete our public survey</p>
+            <a class="button  primary" href="/survey.html">Take Survey</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer class="grid-container fluid">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-8 medium-6 large-6">
+          <a href="/"><%= image_tag("rhydycar_west_white.png") -%></a><br>
+          <p><small>A project by Marvel Limited (Guernsey)</small></p>
+        </div>
+        <div class="social-icons cell small-4 medium-4 large-2 large-offset-3">
+          Follow Us:
+          <div class="grid-x small-3 grid-margin-x">
+            <div class="cell auto">
+              <a href="https://www.facebook.com/RhydycarWest"><i class="fi-social-facebook"></i></a>
+            </div>
+            <div class="cell  auto">
+              <a href="https://www.instagram.com/rhydycar_west"><i class="fi-social-instagram"></i></a>
+            </div>
+            <div class="cell  auto">
+              <a href="https://twitter.com/RhydycarWest"><i class="fi-social-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="reveal text-center surveyPopup" id="survey-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="h2">Show us your support and concerns!</div>
+        <hr>
+        <p class="">We want to know what think about Rhydycar West. <br>Please take our 2 minute survey by clicking on the link below..</p>
+        <p class="text-center"><a class="button alert" href="/survey.html"> Take Survey</a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <button class="subscribe-modal hide" data-open="subscribe-modal"></button>
+  </body>
+</html>

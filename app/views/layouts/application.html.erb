@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];
+        w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NRBXCZS');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><%= content_for?(:title) ? yield(:title) : "Rhydycar West" %></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rhydycar West: A new sports & leisure destination and neighbourhood in South Wales.">
+    <meta name="keywords" content="rhydycar west, wales, sports and leisure, sports, activities, things to do in south wales">
+    <meta name="author" content="Rhydycar West">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:url" content="http://rhydycarwest.com/en">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#da532c">
+    <meta name="apple-mobile-web-app-title" content="Rhydycar West">
+    <meta name="application-name" content="Rhydycar West">
+    <meta name="msapplication-TileColor" content="#da532cs">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/agv1ilt.css">
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    <div class="grid-container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
