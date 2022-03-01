@@ -39,7 +39,7 @@ gem 'foundation-rails'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'devise'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'webpacker', '~> 4.x'
 
 
